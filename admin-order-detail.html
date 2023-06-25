@@ -8,7 +8,7 @@
         <meta name="author"
             content="Mark Otto, Jacob Thornton, and Bootstrap contributors" />
         <meta name="generator" content="Jekyll v3.8.5" />
-        <title>Orders Confirm - robboShop.</title>
+        <title>Admin Order Detail - robboShop.</title>
 
         <link rel="canonical"
             href="https://getbootstrap.com/docs/4.3/examples/navbar-fixed/" />
@@ -52,6 +52,9 @@
                                     class="dropdown-item">Product</a>
                                 <a href="/admin-order.html"
                                     class="dropdown-item">Order</a>
+                                <a href="/admin-pengguna.html"
+                                    class="dropdown-item">Pengguna</a>
+
                             </div>
                         </li>
                     </ul>
@@ -85,60 +88,89 @@
 
         <main role="main" class="container">
             <div class="row">
-                <div class="col-md-3">
-                    <div class="card mb-3">
-                        <div class="card-header">
-                            Menu
+                <div class="col-md-10 mx-auto">
+                    <div class="row mb-3">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <div class="card-header">
+                                    Detail Order #01234123
+                                    <div class="float-right">
+                                        <span class="badge badge-pill badge-info">Menunggu
+                                            Pembayaran</span>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <p>Nama: Nama Penerima</p>
+                                    <p>Telepon: 08991231231</p>
+                                    <p>Alamat: Jl Raya Munjul, Cipayung Jaktim</p>
+                                    <table class="table">
+                                        <thead>
+                                            <tr>
+                                                <th>Product</th>
+                                                <th class="text-center">Price</th>
+                                                <th class="text-center">Sum</th>
+                                                <th class="text-center">Subtotal</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td>
+                                                    <p><img
+                                                            src="https://place-hold.it/50x50"
+                                                            alt>
+                                                        <strong>Product Title</strong>
+                                                    </p>
+                                                </td>
+                                                <td class="text-center">Rp100.000,-</td>
+                                                <td class="text-center">1</td>
+                                                <td class="text-center">Rp100.000,-</td>
+        
+                                            </tr>
+                                            <tr>
+                                                <td colspan="3"><strong>Total:</strong></td>
+                                                <td class="text-center"><strong>Rp100.000,-</strong></td>
+        
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="card-footer">
+                                    <form action="#">
+                                        <div class="input-group">
+                                            <select name="" id="" class="form-control">
+                                                <option value="waiting">Menunggu Pembayaran</option>
+                                                <option value="paid">Dibayar</option>
+                                                <option value="deliverd">Dikirim</option>
+                                                <option value="cancel">Batal</option>
+                                            </select>
+                                            <div class="input-group-append">
+                                                <button class="btn btn-primary" type="submit">Simpan</button>
+                                            </div>
+                                        </div>
+                                    </form>
+                            </div>
                         </div>
-                        <div class="list-group list-group-flush">
-                            <li class="list-group-item">
-                                <a href="/profile.html">Profile</a>
-                            </li>
-                            <li class="list-group-item">
-                                <a href="/orders.html">Orders</a>
-                            </li>
+                        
+                    </div>
+
+                </div>
+
+                <div class="row mb-3">
+                    <div class="col-md-8">
+                        <div class="card">
+                            <div class="card-header">
+                                Bukti Transfer
+                            </div>
+                            <div class="card-body">
+                                <p>Dari Rekening: 091234</p>
+                                <p>Atas Nama: IDStack</p>
+                                <p>Nominal: Rp900.000,-</p>
+                                <p>Catatan: -</p>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-9">
-                    <div class="card">
-                        <div class="card-header">
-                            Konfirmasi Order : #01234123
-                            <div class="float-right">
-                                <span class="badge badge-pill badge-info">Menunggu
-                                    Pembayaran</span>
-                            </div>
-                        </div>
-                        <form action>
-                            <div class="card-body">
-                                <div class="form-group">
-                                    <label for>Transaksi</label>
-                                    <input type="text" class="form-control"
-                                        value="01234123" readonly>
-                                </div>
-                                <div class="form-group">
-                                    <label for>Dari Rekening a/n</label>
-                                    <input type="text" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for>Sebesar</label>
-                                    <input type="number" class="form-control">
-                                </div>
-                                <div class="form-group">
-                                    <label for>Catatan</label>
-                                    <textarea name="description" id cols="30"
-                                        rows="5" class="form-control"></textarea>
-                                </div>
-                                <div class="form-group">
-                                    <label for>Bukti Transfer</label><br>
-                                    <input type="file" name="image" id>
-                                </div>
-                            </div>
-                            <div class="card-footer">
-                                <button type="submit" class="btn btn-success">Konfirmasi
-                                    Pembayaran</button>
-                            </div>
-                        </form>
+                    <div class="col-md-4">
+                        <img src="https://place-hold.it/150x200" alt="">
                     </div>
                 </div>
             </div>
